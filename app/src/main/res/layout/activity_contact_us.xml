@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3E6F8"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:background="@drawable/butttonsideshape"
+        android:divider="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="हमसे संपर्क करे/Contact Us"
+            android:textColor="#095F9E"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Panchayati Raj Department"
+            android:textColor="#0D5E15"
+            android:padding="2dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Vikas Bhawan, New Secretariat "
+            android:textColor="#9DA09D"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+
+            android:text="Bailey Road, Patna,PIN: 800015"
+            android:textColor="#9DA09D"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Email:prdnischaysoft@gmail.com "
+            android:textColor="#095F9E"
+            android:padding="3dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="(For Technical Issues Only)"
+            android:textColor="#9DA09D"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="शिकायत दर्ज करने हेतु ही यह एप्प बनाया गया है ,\n तकनीकी समस्या हेतु ही यह उक्त ईमेल पर संपर्क करे |"
+            android:textColor="#9DA09D"
+            android:padding="5dp"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="(कृपया अपने शिकायती पत्र इस ईमेल पर कदापि न भेजें ,\n इन पत्रों पर कोई कार्यवाही नहीं होगी)"
+            android:textColor="#B11313"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/text8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Website:http://nicapp.bih.nic.in/nischaysoft"
+            android:textColor="#095F9E"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

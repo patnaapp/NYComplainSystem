@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.in.erssGis.activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:padding="5dp"
+            android:layout_weight=".75"
+            android:background="@drawable/background_style"
+            android:orientation="vertical"
+            android:weightSum="4">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#eee">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="#eee">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="#FF8400"
+                    android:id="@+id/ll_register_Grivance">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/grivance" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Register Grievance"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="#eee">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="#5279BB"
+                    android:id="@+id/ll_track_Grievance">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/track"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Track Grievance"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="#EBEBEB">
+
+                </View>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EBEBEB">
+
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="#EBEBEB">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="#DB4437"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:id="@+id/lin_send_Reminder">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/notification"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Send Reminder"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="#EBEBEB">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:background="#A2C922"
+                    android:gravity="center"
+                    android:id="@+id/lin_disaster_Management">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/police_new"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Feedback on disposal"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="#EBEBEB">
+
+                </View>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EBEBEB">
+
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="#EBEBEB">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:background="#F67F00"
+                    android:id="@+id/lin_commercial_financial">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/grivance"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Update Complaint"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="#EBEBEB">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:background="#7266BA"
+                    android:gravity="center"
+                    android:id="@+id/lin_education">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/userdetails"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="User Details"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="#EBEBEB">
+
+                </View>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EBEBEB">
+
+            </View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="#EBEBEB">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:background="#F05050"
+                    android:gravity="center"
+                    android:id="@+id/lin_religious">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/about"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="About Us"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="#EBEBEB">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:background="#489935"
+                    android:gravity="center"
+                    android:id="@+id/lin_contactUs">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/contact"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contact Us"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="#EBEBEB">
+
+                </View>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EBEBEB">
+
+            </View>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:visibility="gone"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>

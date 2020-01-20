@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/default_background_shape">
+
+    <LinearLayout
+        android:padding="12dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/border_black"
+        >
+
+        <TextView
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#3A81B1"
+            android:text="Reminder / अनुस्मारक"/>
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border_new_clr">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#3A81B1"
+                    android:text="Refernce Number / संदर्भ संख्या"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#D33529"
+                    android:text="*"/>
+            </LinearLayout>
+
+            <EditText
+                android:layout_marginTop="4dp"
+                android:id="@+id/et_complain_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_style"
+                android:hint="Please enter complain number"
+                android:inputType="numberDecimal"
+                android:maxLength="30"
+                android:padding="10dp"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_marginRight="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:background="#3A81B1"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:background="#3A81B1"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

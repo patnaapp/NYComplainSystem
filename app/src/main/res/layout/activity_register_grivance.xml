@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.in.erssGis.activity.RegisterGrivance">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_style"
+        android:layout_marginBottom="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:text="District (जिला)"/>
+
+                    <TextView
+                        android:id="@+id/tv_district"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:text="New Text"
+                        android:textColor="#151B54" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:text="Block (प्रखंड)"/>
+
+                    <TextView
+                        android:id="@+id/tv_block"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:textSize="14sp"
+                        android:text="New Text"
+                        android:textColor="#151B54" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:text="Panchayat (पंचायत)"/>
+
+                    <TextView
+                        android:id="@+id/tv_panchayat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:textSize="14sp"
+                        android:text="New Text"
+                        android:textColor="#151B54" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:background="#ffffff"
+            android:id="@+id/sblist"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <View
+                    android:background="@color/colorPrimary"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="130dp"
+                    android:lines="2"
+                    android:id="@+id/bf_name1"
+                    android:textColor="#151B54"
+                    android:padding="5dp"
+                    android:text="Vijya Shalinee"
+                    android:layout_height="match_parent" />
+                <View
+                    android:background="@color/colorPrimary"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:visibility="gone"
+                    android:lines="2"
+                    android:id="@+id/panchyat_name"
+                    android:textColor="#151B54"
+                    android:layout_weight="0.3"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Vijya Shalinee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="0.3"
+                    android:id="@+id/wardname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:padding="5dp"
+                    android:text="820527375847"
+                    android:textColor="#151B54" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/background_style"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#c72c2c"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         android:padding="5dp"
+                        android:textColor="#DDDDDD"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="Register your complaint ( शिकायत दर्ज करे )"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lygender1111"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="8"
+                        android:background="@drawable/border"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        tools:ignore="UselessParent">
+
+                        <Spinner
+                            android:id="@+id/spn_gender1221"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:paddingTop="8dp"
+                            android:layout_marginBottom="2dp"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="-5dp"
+                        android:background="#fff"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="3dp"
+                        android:text="निश्चय के  प्रकार का चयन करें"
+                        android:textColor="@color/colorAccent" />
+                </RelativeLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lybenname"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    >
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/etben_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:hint="Applicant name" />
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lygender1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="8"
+                        android:background="@drawable/border"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        tools:ignore="UselessParent">
+
+                        <EditText
+                            android:id="@+id/spn_gender1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:singleLine="true"
+                            android:layout_marginLeft="10dp"
+                            android:paddingTop="8dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="-5dp"
+                        android:background="#fff"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="3dp"
+                        android:text="Father / Husband name "
+                        android:textColor="@color/colorAccent" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/lygender11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="8"
+                        android:background="@drawable/border"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        tools:ignore="UselessParent">
+
+                        <Spinner
+                            android:id="@+id/spn_gender11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:paddingTop="8dp"
+                            android:layout_marginBottom="2dp"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="-5dp"
+                        android:background="#fff"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="3dp"
+                        android:text="निश्चय के  प्रकार का चयन करें"
+                        android:textColor="@color/colorAccent" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mobilenum2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="8"
+                        android:background="@drawable/border"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        tools:ignore="UselessParent">
+
+                        <EditText
+                            android:id="@+id/et_mobilenum2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:singleLine="true"
+                            android:layout_marginLeft="10dp"
+                            android:paddingTop="8dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="-5dp"
+                        android:background="#fff"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="3dp"
+                        android:text="Mobile Number 2"
+                        android:textColor="@color/colorAccent" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="8"
+                        android:background="@drawable/border"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        tools:ignore="UselessParent">
+
+                        <EditText
+                            android:id="@+id/et_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:singleLine="true"
+                            android:layout_marginLeft="10dp"
+                            android:paddingTop="8dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="-5dp"
+                        android:background="#fff"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="3dp"
+                        android:text="E-mail"
+                        android:textColor="@color/colorAccent" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/aadhar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="8"
+                        android:background="@drawable/border"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        tools:ignore="UselessParent">
+
+                        <EditText
+                            android:id="@+id/et_aadhar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:maxLength="12"
+                            android:layout_marginLeft="10dp"
+                            android:paddingTop="8dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="-5dp"
+                        android:background="#fff"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="3dp"
+                        android:text="Aadhar No."
+                        android:textColor="@color/colorAccent" />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/buttonbackshape"
+                    android:text="BACK"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/buttonbackshape"
+                    android:text="NEXT"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

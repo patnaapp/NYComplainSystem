@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">e-Sikayat Bihar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_photos">Profile</string>
+    <string name="nav_movies">Feedback</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_settings">LogOut</string>
+    <string name="nav_about_us">About Us</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Photos</item>
+        <item>Movies</item>
+        <item>Notifications</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_login">Login</string>
+    <string name="register_grievance">Register Grievance</string>
+    <string name="track_grievance">Track Grievance</string>
+    <string name="contact_Us">Contact Us</string>
+    <string name="send_Reminder">Send Reminder</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_english">English</string>
+    <string name="action_hindi">हिन्दी</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="share">Share</string>
+
+
+    <string name="update">Update</string>
+    <string name="ok">OK</string>
+    <string name="wrong_device_text">This device is not registered in your account !</string>
+    <string name="ignore">Ignore</string>
+
+    <string name="app_version">App Version</string>
+    <string name="authentication_failed">Authentication Failed !</string>
+    <string name="authenticating">Verifying ...</string>
+    <string name="failed">Fail !</string>
+    <string name="login_failed">Wrong User Id / Password</string>
+    <string name="server_down_title">Internet / Server Down  !</string>
+    <string name="server_down_text">No Internet Connectoin !</string>
+    <string name="field_required">This field is required</string>
+    <string name="image">image</string>
+
+    <style name="alert_animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+</resources>

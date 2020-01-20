@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bih.nic.in.erssGis">
+
+    <permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <permission android:name="android.permission.READ_PHONE_STATE" />
+    <permission android:name="android.permission.READ_PROFILE" />
+    <permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <permission android:name="android.permission.INTERNET" />
+    <permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.in.erssGis.activity.SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.in.erssGis.activity.LoginNewActivity"
+            android:theme="@style/AppTheme_New" />
+        <activity
+            android:name="com.in.erssGis.activity.MainActivity"
+            android:label="@string/activity_title_privacy_policy"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.in.erssGis.activity.RegisterGrivance"
+            android:label="@string/register_grievance" />
+        <activity
+            android:name="com.in.erssGis.activity.TrackGrievance"
+            android:label="@string/track_grievance" />
+        <activity
+            android:name="com.in.erssGis.activity.ContactUsActivity"
+            android:label="@string/contact_Us" />
+        <activity
+            android:name="com.in.erssGis.activity.SendReminderActivity"
+            android:label="@string/send_Reminder" />
+    </application>
+
+</manifest>
